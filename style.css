@@ -1,0 +1,285 @@
+/*Body and main container, general styling*/
+
+
+body{
+    background-color: #5c2325;
+    font-family: 'Lalezar';
+    font-size:  17px;
+    color: #5c2325;
+    height: 100vh;
+    margin: 20px;
+}
+
+.boxes{
+
+    min-height: 50vh;
+    margin: 0;
+    background-color: #d9d9d9;
+    padding: 15px;
+
+    display: grid;
+    grid-template-columns: 300px 3fr 1fr;
+    grid-template-rows: 300px 700px;
+    gap: 15px;
+
+}
+
+h1{
+    font-family: 'MistoBook';
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-family: 'Lalezar';
+    font-size: 120px;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #5c2325;
+}
+
+a:hover{
+    color: #d9d9d9;
+}
+
+/*Content within the left column of the page: avatar, paragraph with info about myself, contact links*/
+
+
+.avatar{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    justify-self: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.about{
+    background-color: #eaa993;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    padding: 15px;
+    text-align: justify;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.email, .instagram, .twitter, .discord{
+    display: flex;
+    gap: 5px;
+}
+
+#e, #i, #t, #d{
+    width: 50px;
+    display: block;
+}
+
+.discord{ 
+    display: flex;
+}
+
+/*Content within the middle column of the page: full name, education and career info*/
+
+.name{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-items: end;
+    
+}
+
+.personal{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    padding-top: 15px;
+}
+
+
+.personal h3{
+    font-family: 'MistoBook';
+    font-size: 50px;
+    line-height: 15px;
+    margin: 0;
+}
+
+.personal p{
+    line-height: 25px;
+}
+
+
+/*Content within the right column of the page: small interactive section, information about my skills*/
+
+
+/*Interactive section*/
+.inter{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    text-align: center;
+    font-size: 25px;
+    line-height: 0.5;
+    padding: 40px;
+}
+
+/*Like button with like counter*/
+.heart{
+    background-color: #eaa993;
+    display: inline-block;
+    height: 20px;
+    margin: 0 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(45deg);
+    width: 20px;
+
+
+}
+
+.heart:before, .heart:after{
+    content: '';
+    background-color: #eaa993;
+    border-radius: 50%;
+    height: 20px;
+    position: absolute;
+    width: 20px;
+    
+}
+
+.heart:before{
+    top: -10px;
+    left: 0px;
+    
+}
+
+.heart:after{
+    left: -10px;
+    top: 0;
+    
+}
+
+.heart:active{
+    transform: scale(0.5) rotate(45deg);
+}
+
+
+
+/*Current time in hh:mm format*/
+
+.clock span{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+}
+
+.date{
+    font-size: 70px;
+}
+
+/*Current date in dd/mm/yyyy format*/
+
+/*Information regarding my skills*/
+
+
+
+.skills{
+    background-color: #eaa993;
+    grid-row: 2/3;
+    grid-column: 3/4;
+    padding: 15px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.languages{
+    height: 40%;
+    text-align: start;
+    font-size: 17px;
+    line-height: 2px;
+}
+
+.programs{
+    height: 60%;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 7px;
+}
+
+.progress-bar{
+    background-color: #d9d9d9;
+    height: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress1{
+    width: 100%;
+    height: 100%;
+    background-color: #5c2325;
+    border-radius: 10px;
+}
+
+.progress2{
+    width: 100%;
+    height: 100%;
+    background-color: #5c2325;
+    border-radius: 10px;
+}
+
+.progress3{
+    width: 50%;
+    height: 100%;
+    background-color: #5c2325;
+    border-radius: 10px;
+}
+
+.progress4{
+    width: 30%;
+    height: 100%;
+    background-color: #5c2325;
+    border-radius: 10px;
+}
+
+.skill2 h3{
+    font-size: 15px;
+}
+
+
+/*.like{
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: #eaa993;
+    border: none;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: 0 9px #926353;
+
+}
+
+.like:hover{
+    background-color: #f3ccbf;
+}
+
+.like:active{
+    background-color: #f3ccbf;
+    box-shadow: 0 5px #926353;
+    transform: translateY(4px);
+}*/
