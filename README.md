@@ -10,7 +10,7 @@ The primary objective of the my website is to connect with an audience intereste
 
 1. **Employers and Project Managers**: This website is designed to appeal to individuals or organizations seeking developers or artists for their projects. It aims to showcase my capabilities, experience, and creativity.
 
-2. **Fellow Creators and Artists**: the website caters to fellow artists and creators interested in networking, inspiration, or sharing ideas. It offers insights into my artistic journey and serves as a source of inspiration.
+2. **Creators and Artists**: the website caters to fellow artists and creators interested in networking, inspiration, or sharing ideas. It offers insights into my artistic journey and serves as a source of inspiration.
 
 3. **Students and Aspiring Professionals**: The website can also be valuable to students and individuals aspiring to join the field of art, design, or development. It provides a real-life example of a creative journey and valuable resources.
 
